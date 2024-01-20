@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=i, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+  <script>
+    https; //cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js
+  </script>
+
+  <title>Document</title>
+  <style>
+    body {
+      /* margin: 5%;
+        justify-content: center;
+        text-align: center; */
+    }
+
+    button {
+      width: 3vh;
+    }
+
+    .back {
+      width: 100%;
+      height: 98vh;
+    }
+
+    .two {
+      width: 100%;
+      height: 98vh;
+    }
+
+    .logo {
+      height: 40px;
+      width: 100px;
+    }
+
+    .greenbox {
+      width: 100%;
+      height: 58vh;
+    }
+
+    .blackbox {
+      width: 100%;
+      height: 110vh;
+    }
+
+    .inblackbox {
+      margin-left: 100px;
+      margin-right: 100px;
+      color: white;
+      text-align: center;
+    }
+
+    .horizontal-nav {
+      display: flex;
+      /* Use flexbox for horizontal layout */
+      justify-content: center;
+      gap: 15px;
+      /* Equal spacing between links */
+
+      /* background-color: #f5f5f5; */
+      /* border: 1px solid #ccc; Add a rectangular border */
+      padding: 20px;
+      /* Add padding to create space around the links */
+      margin: 10px;
+    }
+
+    .inblack {
+      color: white;
+      text-align: start;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    /* Style for each navigation link */
+    .mynav-link {
+      text-align: center;
+      padding: 20px;
+      /* Add padding to create a clickable area */
+      border: 1px solid #ddd;
+      /* Add a border around each link */
+      text-decoration: none;
+      color: white;
+      border-radius: 20px;
+      gap: 10px;
+    }
+
+    .nxtblack {
+      background-color: white;
+      width: 100%;
+      height: 98vh;
+      padding: 10px;
+
+    }
+
+    .firstnxtblack {
+      text-align: center;
+    }
+
+    #pro {
+      /* margin-left: 20vh; */
+      text-align: center;
+      display: flex 1;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+
+    .circle {
+      /* float: center;
+        border: 3px solid;
+        border-radius: 115px; */
+      width: 100px;
+      height: 100px;
+      background-color: #3a3a3b;
+      /* Set the background color to your desired color */
+      border-radius: 50%;
+      /* This creates a circular shape */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      /* Set the text color */
+      font-size: 18px;
+    }
+
+    .green {
+      background-color: rgb(115, 204, 115);
+      margin-left: 10%;
+      margin-right: 10%;
+      width: 80%;
+      height: 40vh;
+      border-radius: 10px;
+
+    }
+
+    .last {
+      width: 100%;
+      height: 100vh;
+
+    }
+
+    .blacklast {
+      width: 100%;
+      height: 60vh;
+      background-color: black;
+      padding: 10px;
+      padding-left: 10%;
+      padding-right: 10%;
+      color: white;
+    }
+    .button {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Style for the hover message */
+        .button .hover-message {
+            position: absolute;
+            top: -30px; /* Adjust this value to control the distance between button and message */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #246429;
+            color: #fff;
+            padding: 5px;
+            border-radius: 4px;
+            opacity: 0;
+            pointer-events: none; /* Ensures the message doesn't interfere with button clicks */
+            transition: opacity 0.3s;
+        }
+
+        /* Show the hover message when hovering over the button */
+        .button:hover .hover-message {
+            opacity: 7;
+        }
+    
+
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div style="background-color: powderblue" class="back">
+      <div></div>
+
+      <br />
+      <br />
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <h3 style="text-align: start">
+              <img class="logo" src="https://www.amypo.com/wp-content/uploads/2022/08/BlackAmypo.svg" alt="" />
+            </h3>
+            <div id="datetime"></div>
+          </div>
+          <div class="col-md-4">
+            <ul class="nav">
+              <li class="nav-item">
+                <a style="color: rgb(115, 204, 115)" class="nav-link" href="#">Home</a>
+              </li>
+              <li style="text-align: end" class="nav-item">
+                <a style="color: black; text-align: end" class="nav-link active" aria-current="page" href="#">Active</a>
+              </li>
+
+              <li class="nav-item">
+                <a style="color: black;" class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: black;" class="nav-link" href="#">products</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: black;" class="nav-link" aria-disabled="true">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <br />
+        <div class="col-md-8">
+          <h1 style="font-size: 70px" class="container">
+            <br />
+            The Revolutionary
+            <span style="color: rgb(115, 204, 115)">AI-Powered </span>
+            <br />Learning & Assessment Tool
+          </h1>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi,
+            culpa?
+          </p>
+          <br />
+          <div class="justify-content-center">
+            <button type="button" style="width: 200px" class=" button btn btn-success btn-lg" data-tooltip="Welcome to Amypo">
+              Request demo  <div class="hover-message">WELCOME TO AMYPO</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="two">
+    <h1 style="text-align: center">
+      <br />
+      <br />
+      <br />
+      The definitive one-stop LMS for
+      <span style="color: rgb(115, 204, 115)">Hiring</span> and
+      <span style="color: rgb(115, 204, 115)">upskilling</span>.
+      <br />
+      <br />
+      <br />
+    </h1>
+    <br />
+    <div class="row">
+      <br />
+      <br />
+      <div class="col-md-2"></div>
+      <div style="background-color: azure" class="col-md-4 p-4 rounded">
+        <div class="justify-content-center">
+          <img src="https://cdn1.iconfinder.com/data/icons/books-knowledge/512/hat_student_learn-64.png" alt="" />
+          <h4>For Educational Institutions</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Doloremque, mollitia dolorem! Minus debitis enim quas
+            exercitationem reprehenderit, provident modi sequi.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div style="background-color: azure" class="container p-4 rounded">
+          <img src="https://cdn0.iconfinder.com/data/icons/phosphor-regular-vol-1/256/buildings-64.png" alt="" />
+          <h4>For Corporates</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Doloremque, mollitia dolorem! Minus debitis enim quas
+            exercitationem reprehenderit, provident modi sequi.
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div style="text-align: center">
+      <h1>
+        <span style="color: rgb(115, 204, 115)"><br />Clients' </span>Trust
+        Personified
+      </h1>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div>
+      <div style="margin-left: 120px; margin-right: 120px" class="row">
+        <div class="col-md-2">
+          <img src="https://amypo.in/wp-content/uploads/2023/06/SKI-150x150.png" alt="" />
+        </div>
+        <div class="col-md-2">
+          <img src="https://amypo.in/wp-content/uploads/2023/06/KCT-150x150.png" alt="" />
+        </div>
+        <div class="col-md-2">
+          <img src="https://amypo.in/wp-content/uploads/2023/06/MIT-150x150.png" alt="" />
+        </div>
+        <div class="col-md-2">
+          <img src="https://amypo.in/wp-content/uploads/2023/06/SJBIT-2-150x150.png" alt="" />
+        </div>
+        <div class="col-md-2">
+          <img src="https://amypo.in/wp-content/uploads/2023/06/MVIT-150x150.png" alt="" />
+        </div>
+        <div class="col-md-2">
+          <img src="https://amypo.in/wp-content/uploads/2023/06/MCET-150x150.png" alt="" />
+        </div>
+      </div>
+      <div style="margin-left: 120px; margin-right: 120px" class="row">
+        <div class="col-md-2">
+          <img src="https://amypo.in/wp-content/uploads/2023/06/LAPIZ-2-150x150.png" alt="" />
+        </div>
+        <div class="col-md-2">
+          <img src="https://amypo.in/wp-content/uploads/2023/06/STRAIVE-2-150x150.png" alt="" />
+        </div>
+        <div class="col-md-2">
+          <img src="https://amypo.in/wp-content/uploads/2023/06/CODEMANTRA-2-150x150.png" alt="" />
+        </div>
+        <div class="col-md-2">
+          <img src="https://amypo.in/wp-content/uploads/2023/06/APTARA-2-150x150.png" alt="" />
+        </div>
+        <div class="col-md-2">
+          <img src="https://amypo.in/wp-content/uploads/2023/06/DATAMATICA-2-150x150.png" alt="" />
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+    <div>
+      <div style="background-color: rgb(185, 245, 223)" class="greenbox">
+        <br />
+        <br />
+        <br />
+        <br />
+        <h4 style="text-align: center">
+          Achievements from our hard work and solidarity
+        </h4>
+
+        <br />
+        <p style="text-align: center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+          saepe!
+        </p>
+        <br />
+        <div style="margin-left: 120px; margin-right: 120px" class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <div class="row">
+              <div style="font-size: 50px; text-align: center" class="col-md-6">
+                <span>135+</span>
+                <h4>clients</h4>
+              </div>
+              <div style="font-size: 50px; text-align: center" class="col-md-6">
+                <span>100K</span>
+                <h4>clients</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div style="font-size: 50px; text-align: center" class="col-md-6">
+                <span>110%</span>
+                <h4>clients</h4>
+              </div>
+              <div style="font-size: 50px; text-align: center" class="col-md-6">
+                <span>150+</span>
+                <h4>clients</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+
+    </div>
+    <div style="background-color: rgb(24, 23, 23)" class="blackbox">
+      <div class="inblackbox">
+        <br /><br />
+        <h1>
+          Featured <span style="color: rgb(115, 204, 115)">Products</span>
+        </h1>
+        <br />
+        <p>
+          At <span style="color: rgb(115, 204, 115)">Amypo</span>, we focus
+          on overcoming business challenges rather than pushing pre-set
+          products. With our suite of custom solutions for educational and
+          corporate needs, we offer AI-driven platforms that effortlessly
+          mesh with your operational structure.
+        </p>
+        <br />
+        <small>In the event you’re seeking a customized Learning and Development
+          solution, we are poised to provide a professionally tailored
+          response to your specifications.</small>
+        <div class="horizontal-nav">
+          <a href="#" style="background-color: rgb(115, 204, 115)" class="mynav-link">Dotlab</a>
+          <a href="#" class="mynav-link">Dotexam</a>
+          <a href="#" class="mynav-link">Dotprep</a>
+          <a href="#" class="mynav-link">Dotrecruit</a>
+        </div>
+      </div>
+      <br />
+      <div style="text-align: center" class="row inblack">
+        <div style=" padding: left 10px;  margin-right: 0px;" class="col-md-6">
+          <br /><br /><br /><br /><br /><img style="width: 200px; height: 55px" style="text-align: center;"
+            src="https://www.amypo.com/wp-content/uploads/2023/09/dotcoder_w-300x60.png" alt="" />
+          <h1 style="text-align: center;">
+            Featured <span style="color: rgb(115, 204, 115)">Products</span>
+          </h1>
+          <br />
+          <p style="text-align: center;">
+            Mentorship from industry leaders. DotCoder is your all-in-one
+            platform for coding, assessment, grading, and bespoke reporting.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img style="width: 500px; height: 350px; text-align: start"
+            src="https://www.amypo.com/wp-content/uploads/2023/09/amypo_dotcoder-768x576.png" alt="" />
+        </div>
+        <br />
+        <br />
+
+      </div>
+    </div>
+    <div class="firstnxtblack">
+      <br><br>
+      <h1 style="font-size: 60px;">Voices of <span style="color:  rgb(115, 204, 115);">Success</span></h1>
+      <br>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, nemo!</p><br><br>
+      <div class="row" id="pro">
+        <div class="col-md-3" style="
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+          <div style="margin-left: 120px;" class="circle">01</div>
+          <h3>Royal benit</h3>
+          <i>Lorem ipsum dolor sit amet.</i><br /><br>
+          <i>Price Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod totam fuga modi non, aut
+            consectetur!</i><br />
+        </div>
+        <div class="col-md-3" style="
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          ">
+          <div style="margin-left: 120px;" class="circle">02</div>
+          <h3>Royal benit</h3>
+          <i>Lorem ipsum dolor sit amet.</i><br /><br>
+          <i>Price Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod totam fuga modi non, aut
+            consectetur!</i><br />
+
+        </div>
+        <div class="col-md-3" style="
+                text-align: center;
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+              ">
+          <div style="margin-left: 120px;" class="circle">03</div>
+          <h3>Royal benit</h3>
+          <i>Lorem ipsum dolor sit amet.</i><br /><br>
+          <i>Price Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod totam fuga modi non, aut
+            consectetur!</i><br />
+
+        </div>
+
+      </div>
+      <br>
+      <br><br><br><br><br><br>
+      <h1><b>Frequently Asked <span style="color: rgb(88, 158, 102);">Question</span> </b></h1>
+      <br>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, cumque!</p> <br>
+      <div>
+
+
+        <div style="margin-left: 15%; margin-right: 15%;" class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Can i check the progress?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis voluptatum adipisci modi
+                possimus temporibus ex sed recusandae suscipit autem.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Can i revice the progress?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque ipsa reprehenderit quo
+                quas
+                delectus eligendi facilis suscipit omnis nesciunt?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                How many revisions do i get?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit explicabo voluptate dolore
+                vel? Numquam quaerat expedita et totam harum voluptatem?
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="green">
+      <div class="row">
+        <div style="margin-left: 5%; margin-top: 5%;" class="col-md-6">
+          <h1 style="color: white;">Beautiful landing page with</h1>
+          <h1>Elements</h1>
+          <br>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus modi aperiam accusamus alias
+            excepturi harum.</p>
+
+        </div>
+        <div class="col-md-4">
+
+          <div class="justify-content-center">
+            <button type="button"
+              style="background-color: white; color:  rgb(88, 158, 102); margin-left: 100px; margin-top: 140px; width: 200px"
+              class="btn btn btn-lg">
+              GET DEMO
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <br><br><br>
+
+
+
+
+
+    <div class="blacklast">
+      <div>
+        <h3 style="text-align: start">
+
+          <img style=" height: 100px; width: 100px; color: white;" class="logo"
+            src="https://www.amypo.com/wp-content/uploads/2022/08/amypo_logo-300x225.png" alt="" />
+
+        </h3>
+        <div class="row">
+          <!-- <div class="col-md-1"></div> -->
+          <div class="col-md-4">We build thoughtful identities and experiences to elevate and empower organizations.
+          </div>
+          <div class="col-md-2">Product <br>
+            do tlab <br>dotprep <br>dotexam <br>dotcoder <br>dotrecruit
+          </div>
+          <div class="col-md-2">Quicklinks <br>home <br>about <br>products </div>
+          <div class="col-md-2">Contacts <br>Amypo@gmail <br> 1880188021 </div>
+          <!-- <div class="col-md-1"></div> -->
+        </div>
+        <hr>
+        <p>Copyright © 2023 Amypo Technologies</p>
+        <p></p>
+      </div>
+
+
+      <script>
+        function updateDateTime() {
+          const currentDate = new Date();
+          const options = {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric',
+            timeZoneName: 'short'
+          };
+
+          const formattedDateTime = currentDate.toLocaleDateString(undefined, options);
+          document.getElementById("datetime").innerHTML = formattedDateTime;
+        }
+
+        // Update the date and time initially and then every second
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+
+
+        // JavaScript to show and hide the hover message
+        const hoverTrigger = document.querySelector(".hover-trigger");
+        const hoverMessage = document.querySelector(".hover-message");
+
+        hoverTrigger.addEventListener("mouseover", () => {
+          hoverMessage.style.display = "block";
+        });
+
+        hoverTrigger.addEventListener("mouseout", () => {
+          hoverMessage.style.display = "none";
+        });
+
+
+      </script>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
